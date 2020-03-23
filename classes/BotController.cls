@@ -1,5 +1,6 @@
 public with sharing class BotController {
-//Merge Changes - Test for conflict
+//Merge Changes - Testing conflict
+    //test  
     class HandlerMapping {
         
         public String handlerClassName;
@@ -11,7 +12,7 @@ public with sharing class BotController {
         }
 
     }
-//User comment
+//User
     static List<HandlerMapping> handlerMappings;
     
     static {
