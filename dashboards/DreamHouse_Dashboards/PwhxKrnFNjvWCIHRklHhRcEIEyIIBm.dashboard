@@ -120,7 +120,7 @@
     </dashboardGridLayout>
     <dashboardType>SpecifiedUser</dashboardType>
     <isGridLayout>true</isGridLayout>
-    <runningUser>dayprod@auto.com</runningUser>
+    <runningUser>dev1.pg1@autorabit.com</runningUser>
     <textColor>#000000</textColor>
     <title>My Dashboard</title>
     <titleColor>#000000</titleColor>

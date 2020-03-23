@@ -1,7 +1,7 @@
 public with sharing class BotController {
-
+//M20 Demo 
     class HandlerMapping {
-        
+//D21 Change
         public String handlerClassName;
         public Pattern utterancePattern;
 
@@ -10,20 +10,20 @@ public with sharing class BotController {
             this.utterancePattern = Pattern.compile(patternStr);
         }
 
-    }
 
+    }
     static List<HandlerMapping> handlerMappings;
-    
+  
     static {
         List<Bot_Command__c> commands = [SELECT apex_class__c, pattern__c FROM Bot_Command__c WHERE Active__c = True ORDER BY Name];
         System.debug(commands);
         List<HandlerMapping> mappings = new List<HandlerMapping>();
         for (Bot_Command__c command : commands) {
-			mappings.add(new HandlerMapping(command.apex_class__c, command.pattern__c));
+            mappings.add(new HandlerMapping(command.apex_class__c, command.pattern__c));
         }
         handlerMappings = mappings;
     }
-    
+    //ASAP
     @AuraEnabled
     public static BotResponse submit(String utterance, Map<String, String> session, String fileName, String fileContent) {
         
@@ -37,7 +37,6 @@ public with sharing class BotController {
                     return h.handle(utterance, null, session, fileName, fileContent);
                 }
             }
-        
             for (HandlerMapping mapping : BotController.handlerMappings) {
                 Matcher utteranceMatcher = mapping.utterancePattern.matcher(utterance);
                 if (utteranceMatcher.matches()) {

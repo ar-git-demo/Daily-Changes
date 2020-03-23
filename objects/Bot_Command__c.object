@@ -171,6 +171,14 @@
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>Cal_Time__c</fullName>
+        <externalId>false</externalId>
+        <label>Cal Time</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
         <fullName>Pattern__c</fullName>
         <externalId>false</externalId>
         <label>Invocation Pattern</label>
@@ -190,6 +198,16 @@
         <type>Text</type>
         <unique>false</unique>
     </fields>
+    <fields>
+        <fullName>Test_Field__c</fullName>
+        <externalId>false</externalId>
+        <label>Test Field Demo</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
     <label>Bot Command</label>
     <listViews>
         <fullName>All</fullName>
@@ -208,5 +226,11 @@
     <pluralLabel>Bot Commands</pluralLabel>
     <searchLayouts/>
     <sharingModel>ReadWrite</sharingModel>
+    <validationRules>
+        <fullName>VR1</fullName>
+        <active>true</active>
+        <errorConditionFormula>$Profile.Name = &quot;Admin&quot;</errorConditionFormula>
+        <errorMessage>Error msg</errorMessage>
+    </validationRules>
     <visibility>Public</visibility>
 </CustomObject>

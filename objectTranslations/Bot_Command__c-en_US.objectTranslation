@@ -17,12 +17,20 @@
         <name>Apex_Class__c</name>
     </fields>
     <fields>
+        <label><!-- Cal Time --></label>
+        <name>Cal_Time__c</name>
+    </fields>
+    <fields>
         <label><!-- Invocation Pattern --></label>
         <name>Pattern__c</name>
     </fields>
     <fields>
         <label><!-- Sample Utterance --></label>
         <name>Sample_Utterance__c</name>
+    </fields>
+    <fields>
+        <label><!-- Test Field Demo --></label>
+        <name>Test_Field__c</name>
     </fields>
     <layouts>
         <layout>Bot Action Layout</layout>
@@ -32,4 +40,8 @@
         </sections>
     </layouts>
     <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Error msg --></errorMessage>
+        <name>VR1</name>
+    </validationRules>
 </CustomObjectTranslation>
