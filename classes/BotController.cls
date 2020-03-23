@@ -1,5 +1,5 @@
 public with sharing class BotController {
-
+//Merge Changes - Test for conflict
     class HandlerMapping {
         
         public String handlerClassName;
@@ -11,7 +11,7 @@ public with sharing class BotController {
         }
 
     }
-
+//User comment
     static List<HandlerMapping> handlerMappings;
     
     static {
@@ -19,7 +19,7 @@ public with sharing class BotController {
         System.debug(commands);
         List<HandlerMapping> mappings = new List<HandlerMapping>();
         for (Bot_Command__c command : commands) {
-			mappings.add(new HandlerMapping(command.apex_class__c, command.pattern__c));
+            mappings.add(new HandlerMapping(command.apex_class__c, command.pattern__c));
         }
         handlerMappings = mappings;
     }
@@ -57,7 +57,7 @@ public with sharing class BotController {
             System.debug(e);                
             return new BotResponse(new BotMessage('Bot', 'Oops, something went wrong invoking that command'));
         }
-        
+     //EOL   
     }
     
 }
