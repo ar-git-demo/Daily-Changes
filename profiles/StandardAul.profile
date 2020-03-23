@@ -2312,6 +2312,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Test_Object_Demo_Mar_23__c.Date_Field__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Test_Object_Demo__c.Salary_Fld__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -2524,6 +2529,9 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>Test_Object_Demo_Mar_17__c-Test Object Demo Mar 17 Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Test_Object_Demo_Mar_23__c-Test Object Demo Mar 23 Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Test_Object_Demo__c-Test Object Demo Layout</layout>
@@ -2902,6 +2910,10 @@
     </tabVisibilities>
     <tabVisibilities>
         <tab>Test_Object_Demo_Mar_17__c</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Test_Object_Demo_Mar_23__c</tab>
         <visibility>DefaultOn</visibility>
     </tabVisibilities>
     <tabVisibilities>

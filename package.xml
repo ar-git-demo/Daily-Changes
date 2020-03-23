@@ -772,6 +772,36 @@
         <members>Mar5objectTest__c.Test_Field__c</members>
         <members>Mar_16_Test_Change__c.New_Field__c</members>
         <members>Mar_Test_Object__c.Test_Field__c</members>
+        <members>MessagingEndUser.AccountId</members>
+        <members>MessagingEndUser.ContactId</members>
+        <members>MessagingEndUser.HasInitialResponseSent</members>
+        <members>MessagingEndUser.IsOptedOut</members>
+        <members>MessagingEndUser.Locale</members>
+        <members>MessagingEndUser.MessageType</members>
+        <members>MessagingEndUser.MessagingChannelId</members>
+        <members>MessagingEndUser.MessagingPlatformKey</members>
+        <members>MessagingEndUser.Name</members>
+        <members>MessagingEndUser.OwnerId</members>
+        <members>MessagingEndUser.ProfilePictureUrl</members>
+        <members>MessagingSession.AcceptTime</members>
+        <members>MessagingSession.AgentMessageCount</members>
+        <members>MessagingSession.CaseId</members>
+        <members>MessagingSession.ChannelKey</members>
+        <members>MessagingSession.ChannelName</members>
+        <members>MessagingSession.ChannelType</members>
+        <members>MessagingSession.EndTime</members>
+        <members>MessagingSession.EndUserAccountId</members>
+        <members>MessagingSession.EndUserContactId</members>
+        <members>MessagingSession.EndUserMessageCount</members>
+        <members>MessagingSession.LeadId</members>
+        <members>MessagingSession.MessagingChannelId</members>
+        <members>MessagingSession.MessagingEndUserId</members>
+        <members>MessagingSession.OpportunityId</members>
+        <members>MessagingSession.Origin</members>
+        <members>MessagingSession.OwnerId</members>
+        <members>MessagingSession.PreviewDetails</members>
+        <members>MessagingSession.StartTime</members>
+        <members>MessagingSession.Status</members>
         <members>NamespaceRegistry.NamespacePrefix</members>
         <members>New_Object_Demo_Mar_10__c.New_Field_10mar__c</members>
         <members>New_Object_Mar20__c.Test_Field__c</members>
@@ -1033,6 +1063,7 @@
         <members>Test_Object_Demo_Mar_12__c.TField__c</members>
         <members>Test_Object_Demo_Mar_17__c.Test_Field__c</members>
         <members>Test_Object_Demo_Mar_17__c.Test_field_demo__c</members>
+        <members>Test_Object_Demo_Mar_23__c.Date_Field__c</members>
         <members>Test_Object_Demo__c.Salary_Fld__c</members>
         <members>Test_Object_Feb_26__c.Test_Field__c</members>
         <members>Test_Object_Mar_4__c.New_Test__c</members>
@@ -1109,6 +1140,7 @@
         <members>Feb4_Demo_Obj__c</members>
         <members>Feb_3_Demo_Object__c</members>
         <members>FeedItem</members>
+        <members>ForecastingCategoryMapping</members>
         <members>Idea</members>
         <members>Image</members>
         <members>Individual</members>
@@ -1121,6 +1153,8 @@
         <members>Mar5objectTest__c</members>
         <members>Mar_16_Test_Change__c</members>
         <members>Mar_Test_Object__c</members>
+        <members>MessagingEndUser</members>
+        <members>MessagingSession</members>
         <members>NamespaceRegistry</members>
         <members>New_Object_Demo_Mar_10__c</members>
         <members>New_Object_Mar20__c</members>
@@ -1151,6 +1185,7 @@
         <members>Recommendation</members>
         <members>RecordAction</members>
         <members>RecordMergeHistory</members>
+        <members>RequestsForAccessSIQ</members>
         <members>RevenueElement</members>
         <members>Scorecard</members>
         <members>ScorecardAssociation</members>
@@ -1169,6 +1204,7 @@
         <members>Test_Object_Demo_Mar19__c</members>
         <members>Test_Object_Demo_Mar_12__c</members>
         <members>Test_Object_Demo_Mar_17__c</members>
+        <members>Test_Object_Demo_Mar_23__c</members>
         <members>Test_Object_Demo__c</members>
         <members>Test_Object_Feb_26__c</members>
         <members>Test_Object_Mar_17__c</members>
@@ -1253,6 +1289,7 @@
         <members>Test_Object_Demo_Mar19__c</members>
         <members>Test_Object_Demo_Mar_12__c</members>
         <members>Test_Object_Demo_Mar_17__c</members>
+        <members>Test_Object_Demo_Mar_23__c</members>
         <members>Test_Object_Demo__c</members>
         <members>Test_Object_Feb_26__c</members>
         <members>Test_Object_Mar_17__c</members>
@@ -1401,6 +1438,7 @@
         <members>Test_Object_Demo_Mar19__c-Test Object Demo Layout</members>
         <members>Test_Object_Demo_Mar_12__c-Test Object Demo Mar 12 Layout</members>
         <members>Test_Object_Demo_Mar_17__c-Test Object Demo Mar 17 Layout</members>
+        <members>Test_Object_Demo_Mar_23__c-Test Object Demo Mar 23 Layout</members>
         <members>Test_Object_Demo__c-Test Object Demo Layout</members>
         <members>Test_Object_Feb_26__c-Test Object Feb 26 Layout</members>
         <members>Test_Object_Mar_17__c-Test Object Mar 17 Layout</members>
@@ -1523,6 +1561,7 @@
         <members>Test_Object_Demo_Mar19__c.All</members>
         <members>Test_Object_Demo_Mar_12__c.All</members>
         <members>Test_Object_Demo_Mar_17__c.All</members>
+        <members>Test_Object_Demo_Mar_23__c.All</members>
         <members>Test_Object_Demo__c.All</members>
         <members>Test_Object_Feb_26__c.All</members>
         <members>Test_Object_Mar_17__c.All</members>
@@ -1698,6 +1737,7 @@
         <members>LeadConfig</members>
         <members>LightningExperience</members>
         <members>LiveAgent</members>
+        <members>LiveMessage</members>
         <members>Macro</members>
         <members>Mobile</members>
         <members>MyDomain</members>
@@ -1749,6 +1789,8 @@
         <members>AuthorizationForm</members>
         <members>AuthorizationFormConsent</members>
         <members>AuthorizationFormDataUse</members>
+        <members>Bot_Command__c</members>
+        <members>Broker__c</members>
         <members>CalendarModel</members>
         <members>CalendarView</members>
         <members>Campaign</members>
@@ -1765,9 +1807,11 @@
         <members>ContactRequest</members>
         <members>DataUseLegalBasis</members>
         <members>DataUsePurpose</members>
+        <members>Dreamhouse_Settings__c</members>
         <members>EngagementChannelType</members>
         <members>ExchangeUserMapping</members>
         <members>ExternalEventMapping</members>
+        <members>Favorite__c</members>
         <members>FlowInterview</members>
         <members>Image</members>
         <members>Individual</members>
@@ -1781,6 +1825,7 @@
         <members>OrgDeleteRequest</members>
         <members>PartyConsent</members>
         <members>PromptAction</members>
+        <members>Property__c</members>
         <members>QuickText</members>
         <members>QuickTextUsage</members>
         <members>RecordMergeHistory</members>
