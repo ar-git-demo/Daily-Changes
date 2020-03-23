@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
-    <version>46.0</version>
+    <version>47.0</version>
     <types>
         <members>BotController</members>
         <members>BotField</members>
@@ -149,6 +149,7 @@
         <members>standard__Marketing</members>
         <members>standard__Platform</members>
         <members>standard__Sales</members>
+        <members>standard__SalesforceCMS</members>
         <members>standard__Service</members>
         <members>standard__ServiceConsole</members>
         <members>standard__Sites</members>
@@ -200,6 +201,7 @@
         <members>Asset.AssetServicedById</members>
         <members>Asset.ContactId</members>
         <members>Asset.Description</members>
+        <members>Asset.DigitalAssetStatus</members>
         <members>Asset.InstallDate</members>
         <members>Asset.IsCompetitorProduct</members>
         <members>Asset.IsInternal</members>
@@ -226,18 +228,22 @@
         <members>AuthorizationForm.DefaultAuthFormTextId</members>
         <members>AuthorizationForm.EffectiveFromDate</members>
         <members>AuthorizationForm.EffectiveToDate</members>
+        <members>AuthorizationForm.IsSignatureRequired</members>
         <members>AuthorizationForm.Name</members>
         <members>AuthorizationForm.RevisionNumber</members>
         <members>AuthorizationFormConsent.AuthorizationFormTextId</members>
         <members>AuthorizationFormConsent.ConsentCapturedDateTime</members>
         <members>AuthorizationFormConsent.ConsentCapturedSource</members>
         <members>AuthorizationFormConsent.ConsentCapturedSourceType</members>
+        <members>AuthorizationFormConsent.ConsentGiverId</members>
+        <members>AuthorizationFormConsent.DocumentVersionId</members>
         <members>AuthorizationFormConsent.Name</members>
-        <members>AuthorizationFormConsent.PartyId</members>
+        <members>AuthorizationFormConsent.Status</members>
         <members>AuthorizationFormDataUse.AuthorizationFormId</members>
         <members>AuthorizationFormDataUse.DataUsePurposeId</members>
         <members>AuthorizationFormDataUse.Name</members>
         <members>AuthorizationFormText.AuthorizationFormId</members>
+        <members>AuthorizationFormText.ContentDocumentId</members>
         <members>AuthorizationFormText.FullAuthorizationFormUrl</members>
         <members>AuthorizationFormText.Locale</members>
         <members>AuthorizationFormText.Name</members>
@@ -343,6 +349,14 @@
         <members>Case.SuppliedPhone</members>
         <members>Case.Type</members>
         <members>CaseContactRole.Role</members>
+        <members>CommSubscription.DataUsePurposeId</members>
+        <members>CommSubscription.IsDefault</members>
+        <members>CommSubscription.Name</members>
+        <members>CommSubscription.OwnerId</members>
+        <members>CommSubscriptionChannelType.CommunicationSubscriptionId</members>
+        <members>CommSubscriptionChannelType.EngagementChannelTypeId</members>
+        <members>CommSubscriptionChannelType.Name</members>
+        <members>CommSubscriptionChannelType.OwnerId</members>
         <members>ConsumptionRate.ConsumptionScheduleId</members>
         <members>ConsumptionRate.Description</members>
         <members>ConsumptionRate.LowerBound</members>
@@ -577,6 +591,9 @@
         <members>EmailMessage.TextBody</members>
         <members>EmailMessage.ToAddress</members>
         <members>EmailMessage.ValidatedFromAddress</members>
+        <members>EngagementChannelType.ContactPointType</members>
+        <members>EngagementChannelType.Name</members>
+        <members>EngagementChannelType.OwnerId</members>
         <members>Event.ActivityDate</members>
         <members>Event.ActivityDateTime</members>
         <members>Event.Attendees</members>
@@ -602,16 +619,16 @@
         <members>Favorite__c.User__c</members>
         <members>Idea.Categories</members>
         <members>Idea.Status</members>
+        <members>Image.AlternateText</members>
         <members>Image.CapturedAngle</members>
         <members>Image.ContentDocumentId</members>
-        <members>Image.ImageAlternateText</members>
         <members>Image.ImageClass</members>
         <members>Image.ImageClassObjectType</members>
-        <members>Image.ImageTitle</members>
-        <members>Image.ImageUrl</members>
         <members>Image.ImageViewType</members>
         <members>Image.IsActive</members>
         <members>Image.Name</members>
+        <members>Image.Title</members>
+        <members>Image.Url</members>
         <members>Individual.BirthDate</members>
         <members>Individual.CanStorePiiElsewhere</members>
         <members>Individual.ChildrenCount</members>
@@ -676,10 +693,12 @@
         <members>MessagingEndUser.AccountId</members>
         <members>MessagingEndUser.ContactId</members>
         <members>MessagingEndUser.HasInitialResponseSent</members>
+        <members>MessagingEndUser.IsFullyOptedIn</members>
         <members>MessagingEndUser.IsOptedOut</members>
         <members>MessagingEndUser.Locale</members>
         <members>MessagingEndUser.MessageType</members>
         <members>MessagingEndUser.MessagingChannelId</members>
+        <members>MessagingEndUser.MessagingConsentStatus</members>
         <members>MessagingEndUser.MessagingPlatformKey</members>
         <members>MessagingEndUser.Name</members>
         <members>MessagingEndUser.OwnerId</members>
@@ -727,6 +746,9 @@
         <members>Opportunity.TrackingNumber__c</members>
         <members>Opportunity.Type</members>
         <members>OpportunityCompetitor.CompetitorName</members>
+        <members>OpportunityContactRole.ContactId</members>
+        <members>OpportunityContactRole.IsPrimary</members>
+        <members>OpportunityContactRole.OpportunityId</members>
         <members>OpportunityContactRole.Role</members>
         <members>OpportunityLineItem.Description</members>
         <members>OpportunityLineItem.Discount</members>
@@ -780,7 +802,22 @@
         <members>OrderItem.ServiceDate</members>
         <members>OrderItem.TotalPrice</members>
         <members>OrderItem.UnitPrice</members>
+        <members>OrgMetricScanResult.ItemStatus</members>
+        <members>OrgMetricScanSummary.ErrorMessage</members>
+        <members>OrgMetricScanSummary.ImplementationEffort</members>
+        <members>OrgMetricScanSummary.Status</members>
         <members>PartnerRole.ReverseRole</members>
+        <members>PartyConsent.Action</members>
+        <members>PartyConsent.CaptureContactPointType</members>
+        <members>PartyConsent.CaptureDate</members>
+        <members>PartyConsent.CaptureSource</members>
+        <members>PartyConsent.DoubleConsentCaptureDate</members>
+        <members>PartyConsent.EffectiveFrom</members>
+        <members>PartyConsent.EffectiveTo</members>
+        <members>PartyConsent.Name</members>
+        <members>PartyConsent.OwnerId</members>
+        <members>PartyConsent.PartyId</members>
+        <members>PartyConsent.PrivacyConsentStatus</members>
         <members>Pricebook2.Description</members>
         <members>Pricebook2.IsActive</members>
         <members>Pricebook2.IsStandard</members>
@@ -932,6 +969,8 @@
         <members>ChatterActivity</members>
         <members>CollaborationGroup</members>
         <members>CollaborationGroupMember</members>
+        <members>CommSubscription</members>
+        <members>CommSubscriptionChannelType</members>
         <members>ConsumptionRate</members>
         <members>ConsumptionSchedule</members>
         <members>Contact</members>
@@ -948,13 +987,14 @@
         <members>DuplicateRecordItem</members>
         <members>DuplicateRecordSet</members>
         <members>EmailMessage</members>
+        <members>EngagementChannelType</members>
         <members>Event</members>
         <members>ExchangeUserMapping</members>
         <members>ExpressionFilter</members>
         <members>ExpressionFilterCriteria</members>
+        <members>ExternalEventMapping</members>
         <members>Favorite__c</members>
         <members>FeedItem</members>
-        <members>ForecastingCategoryMapping</members>
         <members>Idea</members>
         <members>Image</members>
         <members>Individual</members>
@@ -963,6 +1003,7 @@
         <members>Macro</members>
         <members>MacroAction</members>
         <members>MacroInstruction</members>
+        <members>MacroUsage</members>
         <members>MessagingEndUser</members>
         <members>MessagingSession</members>
         <members>Opportunity</members>
@@ -972,7 +1013,10 @@
         <members>Order</members>
         <members>OrderItem</members>
         <members>OrgDeleteRequest</members>
+        <members>OrgMetricScanResult</members>
+        <members>OrgMetricScanSummary</members>
         <members>PartnerRole</members>
+        <members>PartyConsent</members>
         <members>Pricebook2</members>
         <members>PricebookEntry</members>
         <members>Product2</members>
@@ -980,9 +1024,10 @@
         <members>PromptAction</members>
         <members>Property__c</members>
         <members>QuickText</members>
+        <members>QuickTextUsage</members>
         <members>Recommendation</members>
         <members>RecordAction</members>
-        <members>RequestsForAccessSIQ</members>
+        <members>RecordMergeHistory</members>
         <members>Scorecard</members>
         <members>ScorecardAssociation</members>
         <members>ScorecardMetric</members>
@@ -1152,6 +1197,10 @@
         <members>Activity.TodaysTasks</members>
         <members>Activity.UpcomingEvents</members>
         <members>Asset.AllAssets</members>
+        <members>AuthorizationForm.All_AuthorizationForms</members>
+        <members>AuthorizationFormConsent.All_AuthorizationFormConsents</members>
+        <members>AuthorizationFormDataUse.All_AuthorizationFormDataUses</members>
+        <members>AuthorizationFormText.All_AuthorizationFormText</members>
         <members>Bot_Command__c.All</members>
         <members>Broker__c.All</members>
         <members>Campaign.AllActiveCampaigns</members>
@@ -1161,6 +1210,8 @@
         <members>Case.MyCases</members>
         <members>Case.MyOpenCases</members>
         <members>CollaborationGroup.All_ChatterGroups</members>
+        <members>CommSubscription.All_CommSubscriptions</members>
+        <members>CommSubscriptionChannelType.All_CommSubscriptionChannelTypes</members>
         <members>ConsumptionSchedule.All_ConsumptionSchedules</members>
         <members>ConsumptionSchedule.My_ConsumptionSchedules</members>
         <members>Contact.AllContacts</members>
@@ -1168,6 +1219,7 @@
         <members>Contact.MyContacts</members>
         <members>Contact.NewLastWeek</members>
         <members>Contact.NewThisWeek</members>
+        <members>ContactPointTypeConsent.All_ContactPointTypeConsents</members>
         <members>ContactRequest.My_ContactRequests</members>
         <members>Contract.AllActivatedContracts</members>
         <members>Contract.AllContracts</members>
@@ -1176,6 +1228,9 @@
         <members>Contract.MyActivatedContracts</members>
         <members>Contract.MyDraftContracts</members>
         <members>Contract.MyInApprovalContracts</members>
+        <members>DataUseLegalBasis.All_DataUseLegalBases</members>
+        <members>DataUsePurpose.All_DataUsePurposes</members>
+        <members>EngagementChannelType.All_EngagementChannelTypes</members>
         <members>Favorite__c.All</members>
         <members>Idea.Ideas_Last_7_Days</members>
         <members>Lead.AllOpenLeads</members>
@@ -1195,6 +1250,7 @@
         <members>Order.AllActivatedOrders</members>
         <members>Order.AllDraftOrders</members>
         <members>Order.AllOrders</members>
+        <members>PartyConsent.All_PartyConsents</members>
         <members>Product2.AllProducts</members>
         <members>Property__c.All</members>
         <members>Recommendation.All_Recommendations</members>
@@ -1214,6 +1270,10 @@
         <members>User.AdminUsers</members>
         <members>User.AllUsers</members>
         <name>ListView</name>
+    </types>
+    <types>
+        <members>news</members>
+        <name>ManagedContentType</name>
     </types>
     <types>
         <members>Admin</members>
@@ -1324,60 +1384,153 @@
     </types>
     <types>
         <members>Account</members>
+        <members>Actions</members>
         <members>Activities</members>
         <members>Address</members>
         <members>Analytics</members>
+        <members>Apex</members>
+        <members>AppExperience</members>
+        <members>Archive</members>
+        <members>Blockchain</members>
         <members>Bot</members>
         <members>BusinessHours</members>
+        <members>Campaign</members>
         <members>Case</members>
+        <members>Chatter</members>
+        <members>ChatterEmailsMD</members>
+        <members>Communities</members>
         <members>Company</members>
+        <members>ConnectedApp</members>
+        <members>Content</members>
         <members>Contract</members>
+        <members>Currency</members>
+        <members>DataDotCom</members>
+        <members>Deployment</members>
+        <members>DevHub</members>
+        <members>Discovery</members>
+        <members>EAC</members>
+        <members>EmailAdministration</members>
+        <members>EmailIntegration</members>
+        <members>EmailTemplate</members>
+        <members>EncryptionKey</members>
+        <members>EnhancedNotes</members>
         <members>Entitlement</members>
+        <members>Essentials</members>
+        <members>Event</members>
         <members>ExperienceBundle</members>
+        <members>ExternalServices</members>
         <members>FieldService</members>
         <members>FileUploadAndDownloadSecurity</members>
+        <members>FilesConnect</members>
+        <members>Flow</members>
         <members>Forecasting</members>
+        <members>Formula</members>
         <members>GoogleApps</members>
         <members>Ideas</members>
+        <members>Industries</members>
+        <members>InvocableAction</members>
+        <members>IsvHammer</members>
         <members>Knowledge</members>
+        <members>Language</members>
+        <members>LeadConfig</members>
+        <members>LightningExperience</members>
         <members>LiveAgent</members>
         <members>LiveMessage</members>
         <members>Macro</members>
         <members>Mobile</members>
+        <members>MyDomain</members>
         <members>Name</members>
         <members>Notifications</members>
+        <members>ObjectLinking</members>
         <members>OmniChannel</members>
         <members>Opportunity</members>
         <members>Order</members>
         <members>Org</members>
         <members>OrgPreference</members>
+        <members>Pardot</members>
+        <members>PardotEinstein</members>
+        <members>PartyDataModel</members>
         <members>PathAssistant</members>
+        <members>Picklist</members>
+        <members>PlatformEncryption</members>
+        <members>Privacy</members>
         <members>Product</members>
         <members>Quote</members>
+        <members>RecordPage</members>
+        <members>RetailExecution</members>
+        <members>Schema</members>
         <members>Search</members>
         <members>Security</members>
+        <members>Sharing</members>
+        <members>Site</members>
+        <members>SocialProfile</members>
+        <members>Survey</members>
+        <members>SystemNotification</members>
+        <members>Territory2</members>
+        <members>Trailhead</members>
+        <members>TrialOrg</members>
+        <members>UserEngagement</members>
         <members>UserInterface</members>
         <members>UserManagement</members>
+        <members>Voice</members>
+        <members>WorkDotCom</members>
         <name>Settings</name>
     </types>
     <types>
         <members>Account</members>
+        <members>ActivityRecurrence2</members>
         <members>Asset</members>
-        <members>Bot_Command__c</members>
-        <members>Broker__c</members>
+        <members>AssistantInteraction</members>
+        <members>AssistantProgress</members>
+        <members>AssistantRecommendation</members>
+        <members>AuthorizationForm</members>
+        <members>AuthorizationFormConsent</members>
+        <members>AuthorizationFormDataUse</members>
+        <members>CalendarModel</members>
+        <members>CalendarView</members>
         <members>Campaign</members>
         <members>Case</members>
+        <members>CleanLeadBackup</members>
+        <members>CommSubscription</members>
+        <members>CommSubscriptionChannelType</members>
+        <members>ComponentResponseCache</members>
+        <members>ConsumptionSchedule</members>
         <members>Contact</members>
-        <members>Dreamhouse_Settings__c</members>
-        <members>Favorite__c</members>
+        <members>ContactPointTypeConsent</members>
+        <members>ContactRequest</members>
+        <members>DataUseLegalBasis</members>
+        <members>DataUsePurpose</members>
+        <members>EngagementChannelType</members>
+        <members>ExchangeUserMapping</members>
+        <members>ExternalEventMapping</members>
         <members>FlowInterview</members>
+        <members>Image</members>
         <members>Individual</members>
         <members>Lead</members>
         <members>ListEmail</members>
+        <members>Macro</members>
+        <members>MacroUsage</members>
+        <members>MessagingEndUser</members>
+        <members>MessagingSession</members>
+        <members>NotifDeliveryUserPref</members>
         <members>Opportunity</members>
         <members>Order</members>
-        <members>Property__c</members>
+        <members>OrgDeleteRequest</members>
+        <members>PartyConsent</members>
+        <members>PromptAction</members>
+        <members>QuickText</members>
+        <members>QuickTextUsage</members>
+        <members>RecordMergeHistory</members>
+        <members>ReportResultBlob</members>
+        <members>Scorecard</members>
+        <members>SiqUserBlacklist</members>
+        <members>StreamActivityAccess</members>
+        <members>StreamingChannel</members>
+        <members>TodayGoal</members>
         <members>User</members>
+        <members>UserAppMenuCustomization</members>
+        <members>UserEmailPreferredPerson</members>
+        <members>UserProvisioningRequest</members>
         <name>SharingRules</name>
     </types>
     <types>
@@ -1412,6 +1565,7 @@
         <members>OpportunityCompetitor</members>
         <members>OpportunityStage</members>
         <members>OpportunityType</members>
+        <members>OrderStatus</members>
         <members>OrderType</members>
         <members>PartnerRole</members>
         <members>Product2Family</members>

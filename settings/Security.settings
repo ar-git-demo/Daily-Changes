@@ -1,8 +1,121 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <SecuritySettings xmlns="http://soap.sforce.com/2006/04/metadata">
-    <networkAccess/>
+    <canUsersGrantLoginAccess>true</canUsersGrantLoginAccess>
+    <enableAdminLoginAsAnyUser>false</enableAdminLoginAsAnyUser>
+    <enableAuditFieldsInactiveOwner>false</enableAuditFieldsInactiveOwner>
+    <enableAuraSecureEvalPref>true</enableAuraSecureEvalPref>
+    <enableRequireHttpsConnection>true</enableRequireHttpsConnection>
+    <isTLSv12Required>false</isTLSv12Required>
+    <isTLSv12RequiredCommunities>false</isTLSv12RequiredCommunities>
+    <networkAccess>
+        <ipRanges>
+            <end>51.255.255.255</end>
+            <start>50.0.0.0</start>
+        </ipRanges>
+        <ipRanges>
+            <end>49.255.255.255</end>
+            <start>48.0.0.0</start>
+        </ipRanges>
+        <ipRanges>
+            <end>47.255.255.255</end>
+            <start>46.0.0.0</start>
+        </ipRanges>
+        <ipRanges>
+            <end>45.255.255.255</end>
+            <start>44.0.0.0</start>
+        </ipRanges>
+        <ipRanges>
+            <end>43.255.255.255</end>
+            <start>42.0.0.0</start>
+        </ipRanges>
+        <ipRanges>
+            <end>41.255.255.255</end>
+            <start>40.0.0.0</start>
+        </ipRanges>
+        <ipRanges>
+            <end>39.255.255.255</end>
+            <start>38.0.0.0</start>
+        </ipRanges>
+        <ipRanges>
+            <end>37.255.255.255</end>
+            <start>36.0.0.0</start>
+        </ipRanges>
+        <ipRanges>
+            <end>35.255.255.255</end>
+            <start>34.0.0.0</start>
+        </ipRanges>
+        <ipRanges>
+            <end>33.255.255.255</end>
+            <start>32.0.0.0</start>
+        </ipRanges>
+        <ipRanges>
+            <end>31.255.255.255</end>
+            <start>30.0.0.0</start>
+        </ipRanges>
+        <ipRanges>
+            <end>29.255.255.255</end>
+            <start>28.0.0.0</start>
+        </ipRanges>
+        <ipRanges>
+            <end>27.255.255.255</end>
+            <start>26.0.0.0</start>
+        </ipRanges>
+        <ipRanges>
+            <end>25.255.255.255</end>
+            <start>24.0.0.0</start>
+        </ipRanges>
+        <ipRanges>
+            <end>23.255.255.255</end>
+            <start>22.0.0.0</start>
+        </ipRanges>
+        <ipRanges>
+            <end>21.255.255.255</end>
+            <start>20.0.0.0</start>
+        </ipRanges>
+        <ipRanges>
+            <end>19.255.255.255</end>
+            <start>18.0.0.0</start>
+        </ipRanges>
+        <ipRanges>
+            <end>17.255.255.255</end>
+            <start>16.0.0.0</start>
+        </ipRanges>
+        <ipRanges>
+            <end>15.255.255.255</end>
+            <start>14.0.0.0</start>
+        </ipRanges>
+        <ipRanges>
+            <end>13.255.255.255</end>
+            <start>12.0.0.0</start>
+        </ipRanges>
+        <ipRanges>
+            <end>11.255.255.255</end>
+            <start>10.0.0.0</start>
+        </ipRanges>
+        <ipRanges>
+            <end>9.255.255.255</end>
+            <start>8.0.0.0</start>
+        </ipRanges>
+        <ipRanges>
+            <end>7.255.255.255</end>
+            <start>6.0.0.0</start>
+        </ipRanges>
+        <ipRanges>
+            <end>5.255.255.255</end>
+            <start>4.0.0.0</start>
+        </ipRanges>
+        <ipRanges>
+            <end>3.255.255.255</end>
+            <start>2.0.0.0</start>
+        </ipRanges>
+        <ipRanges>
+            <end>1.255.255.255</end>
+            <start>0.0.0.0</start>
+        </ipRanges>
+    </networkAccess>
     <passwordPolicies>
         <complexity>AlphaNumeric</complexity>
+        <enableSetPasswordInApi>true</enableSetPasswordInApi>
         <expiration>NinetyDays</expiration>
         <historyRestriction>3</historyRestriction>
         <lockoutInterval>FifteenMinutes</lockoutInterval>
@@ -13,6 +126,8 @@
         <questionRestriction>DoesNotContainPassword</questionRestriction>
     </passwordPolicies>
     <sessionSettings>
+        <allowUserAuthenticationByCertificate>false</allowUserAuthenticationByCertificate>
+        <canConfirmEmailChangeInLightningCommunities>false</canConfirmEmailChangeInLightningCommunities>
         <disableTimeoutWarning>false</disableTimeoutWarning>
         <enableCSPOnEmail>true</enableCSPOnEmail>
         <enableCSRFOnGet>true</enableCSRFOnGet>
@@ -23,20 +138,24 @@
         <enableClickjackNonsetupUserHeaderless>false</enableClickjackNonsetupUserHeaderless>
         <enableClickjackSetup>true</enableClickjackSetup>
         <enableContentSniffingProtection>true</enableContentSniffingProtection>
+        <enableLightningLogin>true</enableLightningLogin>
+        <enableLightningLoginOnlyWithUserPerm>false</enableLightningLoginOnlyWithUserPerm>
         <enablePostForSessions>false</enablePostForSessions>
         <enableSMSIdentity>true</enableSMSIdentity>
+        <enableU2F>false</enableU2F>
         <enableUpgradeInsecureRequests>true</enableUpgradeInsecureRequests>
         <enableXssProtection>true</enableXssProtection>
         <enforceIpRangesEveryRequest>false</enforceIpRangesEveryRequest>
         <forceLogoutOnSessionTimeout>true</forceLogoutOnSessionTimeout>
         <forceRelogin>true</forceRelogin>
+        <hasRetainedLoginHints>false</hasRetainedLoginHints>
+        <hasUserSwitching>true</hasUserSwitching>
         <hstsOnForcecomSites>false</hstsOnForcecomSites>
         <identityConfirmationOnEmailChange>false</identityConfirmationOnEmailChange>
         <identityConfirmationOnTwoFactorRegistrationEnabled>true</identityConfirmationOnTwoFactorRegistrationEnabled>
         <lockSessionsToDomain>true</lockSessionsToDomain>
         <lockSessionsToIp>false</lockSessionsToIp>
         <lockerServiceCSP>true</lockerServiceCSP>
-        <lockerServiceFrozenRealm>false</lockerServiceFrozenRealm>
         <redirectionWarning>true</redirectionWarning>
         <referrerPolicy>true</referrerPolicy>
         <requireHttpOnly>false</requireHttpOnly>
@@ -44,4 +163,9 @@
         <securityCentralKillSession>true</securityCentralKillSession>
         <sessionTimeout>TwoHours</sessionTimeout>
     </sessionSettings>
+    <singleSignOnSettings>
+        <enableMultipleSamlConfigs>true</enableMultipleSamlConfigs>
+        <enableSamlJitProvisioning>false</enableSamlJitProvisioning>
+        <enableSamlLogin>false</enableSamlLogin>
+    </singleSignOnSettings>
 </SecuritySettings>
