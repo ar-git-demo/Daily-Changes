@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
-    <version>47.0</version>
+    <version>48.0</version>
     <types>
         <members>BotController</members>
         <members>BotField</members>
@@ -376,6 +376,7 @@
         <members>ConsumptionSchedule.RatingMethod</members>
         <members>ConsumptionSchedule.Type</members>
         <members>ConsumptionSchedule.UnitOfMeasure</members>
+        <members>Contact.AR_Exercise1Chanu__c</members>
         <members>Contact.AccountId</members>
         <members>Contact.AssistantName</members>
         <members>Contact.AssistantPhone</members>
@@ -999,6 +1000,7 @@
         <members>ExternalEventMapping</members>
         <members>Favorite__c</members>
         <members>FeedItem</members>
+        <members>ForecastingCategoryMapping</members>
         <members>Idea</members>
         <members>Image</members>
         <members>Individual</members>
@@ -1032,6 +1034,7 @@
         <members>Recommendation</members>
         <members>RecordAction</members>
         <members>RecordMergeHistory</members>
+        <members>RequestsForAccessSIQ</members>
         <members>Scorecard</members>
         <members>ScorecardAssociation</members>
         <members>ScorecardMetric</members>
@@ -1127,6 +1130,10 @@
         <members>Price_Change_Push_Notification</members>
         <members>Test_Process_for_Opp</members>
         <name>FlowDefinition</name>
+    </types>
+    <types>
+        <members>AR_Exercise1ValueSetChanu</members>
+        <name>GlobalValueSet</name>
     </types>
     <types>
         <members>DE Default</members>
@@ -1497,6 +1504,8 @@
         <members>AuthorizationForm</members>
         <members>AuthorizationFormConsent</members>
         <members>AuthorizationFormDataUse</members>
+        <members>Bot_Command__c</members>
+        <members>Broker__c</members>
         <members>CalendarModel</members>
         <members>CalendarView</members>
         <members>Campaign</members>
@@ -1511,9 +1520,11 @@
         <members>ContactRequest</members>
         <members>DataUseLegalBasis</members>
         <members>DataUsePurpose</members>
+        <members>Dreamhouse_Settings__c</members>
         <members>EngagementChannelType</members>
         <members>ExchangeUserMapping</members>
         <members>ExternalEventMapping</members>
+        <members>Favorite__c</members>
         <members>FlowInterview</members>
         <members>Image</members>
         <members>Individual</members>
@@ -1529,6 +1540,7 @@
         <members>OrgDeleteRequest</members>
         <members>PartyConsent</members>
         <members>PromptAction</members>
+        <members>Property__c</members>
         <members>QuickText</members>
         <members>QuickTextUsage</members>
         <members>RecordMergeHistory</members>
